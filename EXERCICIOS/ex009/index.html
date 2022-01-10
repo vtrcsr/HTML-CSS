@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias HTML5</title>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes.</p>
+    <picture>
+        <!--TEM QUE SER DA FOTO MENOR PARA MAIOR-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto Grande">
+    </picture>
+    <h1>Reproduzindo aúdio</h1>
+    <p>Vamos aprender a colocar aúdio no seu site</p>
+    <audio src="audios/Natural Light - Chris Haugen.mp3" controls></audio>
+    <!--
+        COMPATÍVEL COM FORMATO MP3, WAV E OGG-->
+    <!--EVITAR USAR ARQUIVO WAV (MUITO PESADO)
+    -->
+
+    <!--
+        OUTRO JEITO DE ADICIONAR AUDIO
+        (USE ESTE MODO)
+        (ORGANIZAR POR TAMANHO)
+    <audio>
+        <source src="audios/Natural Light - Chris Haugen.mp3 type="audio/mpeg">
+        <source src="audios/Natural Light - Chris Haugen.wav type="audio/wav">
+        <source src="audios/Natural Light - Chris Haugen.ogg type="audio/ogg">
+    </audio>
+    Use o termo "loop" no final do código audio se quiser deixar a música tocando "eternamente"
+    -->
+    <h1>Inserindo vídeos</h1>
+    <p>Vídeo hospedado no meu próprio servidor</p>
+    <video src="midia/video.mp4" width="400" poster="imagens/preview16.png" controls loop></video>
+
+    <!--
+        OUTRO JEITO DE INSERIR VIDEO
+        (USE ESTE MODO)
+        (ORGANIZAR POR TAMANHO)
+    <video>
+        <source src="midia/Video-1.m4v type="video/mp4">
+        <source src="midia/Video-1.mp4 type="video/mp4">
+        <source src="midia/Video-1.webm type="video/webm">
+        <source src="midia/Video-1.ogv type="video/ogv">
+    </video>
+    -->
+
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NQ4G-_tj7XQ" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <!--
+        CUIDADO COM OS DIREITOS AUTORAIS, SEMPRE USAR VÍDEOS FEITOS POR VOCÊ!
+    -->
+</body>
+
+</html>

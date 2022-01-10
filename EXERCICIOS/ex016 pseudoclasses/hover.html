@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOVER</title>
+    <style>
+        div:hover{
+            color: darkgreen;
+        }
+        div > p{
+            display: none;
+            color: darkmagenta;
+        }
+        div:hover > p{
+            display: block;
+            color: darkred;
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <h1>div</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eveniet sint non reprehenderit corrupti ipsa deleniti. Debitis maxime nesciunt autem non a veritatis cupiditate rem voluptates, voluptate, vitae nisi blanditiis?</p>
+    <div>passe o mouse aqui
+    <p>texto oculto</p></div>
+</body>
+</html>

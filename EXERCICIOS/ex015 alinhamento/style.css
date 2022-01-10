@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*  id = # (só pode ter um id)
+    class = . (pode ter vários)
+    : = pseudo-classes
+    :: = pseudo-elementos
+    > = children
+*/
+
+body{
+    background-color: aquamarine;
+}
+h1{
+    background-color: beige;
+    text-align: center;
+}
+h1#principal{
+    background-color: blue;
+    text-align: start;
+}
+h2{
+    background-color: beige;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    text-indent: 10px;
+}
+.inicial{
+    background-color: crimson;
+}
+.intermediario{
+    background-color: darkgreen;
+}
+.final{
+    background-color: deeppink;
+}
+.destaque{
+    color: gold;
+}
