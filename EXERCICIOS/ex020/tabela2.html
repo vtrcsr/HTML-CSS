@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela grande</title>
+    <style>
+        td, th{
+            border: 1px solid black;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        thead, tfoot{
+            background-color: lightgray;
+        }
+        .numero{
+            text-align: right;
+        }
+        caption{
+            font-size: 1em;
+            font-weight: bolder;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: lightgrey;
+        }
+    </style>
+    <!--
+        anatomia tabelas
+        THEAD (PODE TER TR, TD, TH)
+        TBODY (PODE TER TR, TD, TH)
+        TFOOT (PODE TER TR, TD, TH)
+    -->
+</head>
+<body>
+    <table>
+        <caption>População Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade federativa</th>
+                <th scope="col" style="width: 20px;">População</th>
+                <th scope="col">%</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td class="numero">45000</td>
+                <td class="numero">21,9%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td class="numero">21000</td>
+                <td class="numero">10,1%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <th></th>
+                <td class="numero">0000</td>
+                <td class="numero">100%</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
