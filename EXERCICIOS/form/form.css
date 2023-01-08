@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.contato{
+background-image: linear-gradient(to right, #D38312, #A83279);
+color: whitesmoke;
+padding: 30px;
+font-weight: bold;
+font-size: larger;
+}
+
+form{
+  padding: 30px;
+}
+
+.nome label{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.nome input{
+  width: 360px;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.invalido{
+  border: 1px solid red;
+}
+
+.erro{
+  font-size: 12px;
+  color: red;
+}
+
+.esconder-erro{
+  display: none;
+}
+
+button{
+  margin-top: 8px;
+  padding: 3px;
+  width: 80px;
+  background: none;
+  border: 1px solid #A83279;
+  border-radius: 3px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+button:hover{
+  background-image: linear-gradient(to right, #D38312, #A83279);
+  border: 1px solid #A83279;
+}
