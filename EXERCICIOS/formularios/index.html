@@ -63,13 +63,43 @@
       <input type="checkbox" name="fut" id="idfut"> <label for="idfut">Futebol</label>
       <input type="checkbox" name="volei" id="idvolei"> <label for="idvolei">Volei</label>
     </fieldset>
-
-
-
-
-
-
   </form>
+
+<h1>Cores</h1>
+<form action="cadastro.php" method="post">
+  <fieldset><legend>Extras</legend>
+    <p>
+      <label for="idcor">Cores </label><input type="color" name="cor" id="idcor">
+    </p>
+    <p><label for="idnivel">Nivel <input type="range" name="nivel" id="idnivel" min="1" max="5" value="0"></label></p>
+    <p><label for="idarq">
+      <input type="file" name="arq" id="idarq">
+    </label></p>
+    <p><label for="idest">Estado <select name="estado" id="idest">
+      <optgroup label="Sudeste">
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="ES">Espirito Santo</option>
+      </optgroup>
+    </select></label></p>
+    <p><label for="idprof">Profissão <input type="text" list="listaprof">
+      <datalist id="listaprof">
+        <option>Mecanico</option>
+        <option>Eletricista</option>
+        <option>Motorista</option>
+        <option>Garçom</option>
+      </datalist>
+    </label></p>
+    <p>
+      <label for="idmsg">Mensagem: <br>
+      <textarea name="msg" id="idmsg" cols="30" rows="10"></textarea>
+      </label>
+    </p>
+  </fieldset>
+  </form>
+
+
 
 </body>
 </html>
