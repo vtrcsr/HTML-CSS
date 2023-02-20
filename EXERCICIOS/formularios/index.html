@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Login</h1>
+  <form action="cadastro.php" method="post" autocomplete="on">
+    <fieldset><legend>Cadastro</legend>
+      <p><label for="idnome">Nome </label><input type="text" name="nome" id="idnome" required minlength="3" maxlength="20" size="10" placeholder="Digite seu nome" autocomplete="name"></p>
+      <p><label for="idsenha">Senha </label> <input type="password" name="senha" id="idsenha" required minlength="8" size="10" placeholder="Digite sua senha" autocomplete="current-password"></p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </fieldset>
+
+  </form>
+
+
+  <h1>Média</h1>
+  <form action="cadastro.php">
+    <fieldset><legend>Notas</legend>
+      <p>
+        <label for="idmedia">Média </label><input type="number" name="media" id="idmedia" min="0" max="10" step="0.1" required>
+      </p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+      <p>
+        <label for="idmes">Período Letivo </label><input type="month" name="mes" id="idmes" value="2023-02">
+      </p>
+      <p>
+        <label for="iddia">Dia da Prova </label><input type="date" name="dia" id="iddia" value="2023-02-19">
+      </p>
+      <p>
+        <label for="idhora">Hora </label><input type="time" name="hora" id="idhora">
+      </p>
+    </fieldset>
+
+    <h1>Email e telefone</h1>
+  </form>
+
+    <form action="cadastro.php">
+      <fieldset><legend>Dados pessoais</legend>
+        <p><label for="idemail">Email <input type="email" name="email" id="idmeail"></label></p>
+        <p><label for="idtel">Telefone <input type="tel" name="tel" id="idtel" autocomplete="tel"
+          pattern="\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx" required></label></p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        
+      </fieldset>
+    </form>
+  
+    <fieldset><legend>Selecione:</legend>
+    <h1>Sexo</h1>
+    <input type="radio" name="radio" id="idradiom" value="M"><label for="idradiom">Masculino</label>
+    <input type="radio" name="radio" id="idradiof" value="F"><label for="idradiof">Feminino</label>
+    <h1>Esportes</h1>
+    <form action="cadastro.php">
+    
+      <input type="checkbox" name="basq" id="idbasq"> <label for="idbasq">Basquete</label>
+      <input type="checkbox" name="fut" id="idfut"> <label for="idfut">Futebol</label>
+      <input type="checkbox" name="volei" id="idvolei"> <label for="idvolei">Volei</label>
+    </fieldset>
+
+
+
+
+
+
+  </form>
+
+</body>
+</html>
