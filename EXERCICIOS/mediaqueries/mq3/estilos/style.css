@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #233eff;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: whitesmoke;
+  text-shadow: 3px 2px 1px rgb(45, 45, 45);
+  padding: 20px;
+}
+
+@media screen and (orientation: portrait) {
+  body {
+    background-image: url(../imgs/cev-portrait.jpg);
+    background-position: center bottom;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  body {
+    background-image: url(../imgs/cev-landscape.jpg);
+    background-position: left bottom;
+  }
+}

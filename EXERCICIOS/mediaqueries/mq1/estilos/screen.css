@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+}
+
+header{
+  background-color: rgb(193, 185, 170);
+}
+
+header h1{
+  text-align: center;
+}
+
+menu li{
+  display: inline-block;
+  padding: 20px;
+  background-color: rgb(97, 94, 94);
+}
+
+menu ul{
+  text-decoration: none;
+  list-style-type: none;
+  background-color: rgb(195, 191, 191);
+  color: white;
+}
+
+article{
+  width: 640px;
+  margin: auto;
+}
